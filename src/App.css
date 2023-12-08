@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+body {
+  overflow-x: hidden;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 123, 0),
+    rgb(255, 0, 13)
+  );
+  height: 50px;
+  padding: 3px;
+}
+
+#left-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+#header-text {
+  color: #ffff;
+  align-items: center;
+  height: 100%;
+}
+
+#right-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-right: 10px;
+}
+
+#page-title {
+  display: flex;
+  flex-direction: column;
+}
+
+#title-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.box {
+  box-sizing: border-box;
+  width: calc(25% - 20px);
+  margin: 10px;
+  text-align: center;
+  padding: 3px;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box {
+    width: 100%;
+  }
+}
+
+#project-card-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  box-shadow: 1px 1px rgb(226, 225, 225);
+  border: 1px solid rgb(241, 238, 238);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+#small-container {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
